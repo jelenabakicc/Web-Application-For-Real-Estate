@@ -1,0 +1,29 @@
+{
+    "_id" : ObjectId("60e5bbe5b1f60e4768b7a35d"),
+    "ime" : "Marija",
+    "prezime" : "Milic",
+    "kor_ime" : "marijam",
+    "lozinka" : "123Marija*",
+    "email" : "marija@gmail.com",
+    "grad" : "Beograd",
+    "drzava" : "Srbija",
+    "slika" : "genericka.jpg",
+    "tip" : "Radnik",
+    "odobren" : 0,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e6ef9373cccb2040fdbfc3"),
+    "ime" : "Luka",
+    "prezime" : "Simovic",
+    "kor_ime" : "lukas",
+    "lozinka" : "123Luka*",
+    "email" : "luka@gmail.com",
+    "grad" : "Dizeldorf",
+    "drzava" : "Nemacka",
+    "slika" : "brad-pitt.jpg",
+    "tip" : "Registrovani",
+    "odobren" : 0,
+    "__v" : 0
+}
