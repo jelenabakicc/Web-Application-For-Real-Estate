@@ -1,0 +1,109 @@
+{
+    "_id" : ObjectId("60c13d2fd3dfef99d73995d7"),
+    "ime" : "Jelena",
+    "prezime" : "Bakic",
+    "kor_ime" : "jelenab",
+    "lozinka" : "123Jelena**",
+    "email" : "jeca.bakic@gmail.com",
+    "grad" : "Nica",
+    "drzava" : "Francuska",
+    "slika" : "slika1.jpg",
+    "tip" : "Registrovani"
+}
+
+{
+    "_id" : ObjectId("60c88a7fadf980637cfd99aa"),
+    "ime" : "Petar",
+    "prezime" : "Peric",
+    "kor_ime" : "ppetar",
+    "lozinka" : "123Petar*",
+    "email" : "petar@gmail.com",
+    "grad" : "Beograd",
+    "drzava" : "Srbija",
+    "slika" : "slika2.jpg",
+    "tip" : "Admin"
+}
+
+{
+    "_id" : ObjectId("60e37d68bb4195293c297cac"),
+    "ime" : "Ema",
+    "prezime" : "Jankovic",
+    "kor_ime" : "emaj",
+    "lozinka" : "123Ema**",
+    "email" : "ema@gmail.com",
+    "grad" : "Novi Sad",
+    "drzava" : "Srbija",
+    "slika" : "received_1214374478764189-01 (2).jpeg",
+    "tip" : "Radnik",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e40ce0d299d54fb8ce99d3"),
+    "ime" : "Biljana",
+    "prezime" : "Bakic",
+    "kor_ime" : "biljanab",
+    "lozinka" : "123Biljana*",
+    "email" : "bilja@gmail.com",
+    "grad" : "Barselona",
+    "drzava" : "Spanija",
+    "slika" : "genericka.jpg",
+    "tip" : "Registrovani",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e40f58d299d54fb8ce99d4"),
+    "ime" : "Milan",
+    "prezime" : "Zecevic",
+    "kor_ime" : "milanz",
+    "lozinka" : "123Milan*",
+    "email" : "milan@gmail.com",
+    "grad" : "Pariz",
+    "drzava" : "Francuska",
+    "slika" : "15235734_10205854974291863_7533941937234816338_o (3).jpg",
+    "tip" : "Radnik",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e410ccd299d54fb8ce99d5"),
+    "ime" : "Mina",
+    "prezime" : "Jankovic",
+    "kor_ime" : "minaj",
+    "lozinka" : "123Mina*",
+    "email" : "mina@gmail.com",
+    "grad" : "Beograd",
+    "drzava" : "Srbija",
+    "slika" : "IMG-20200508-WA0037-01 (2).jpeg",
+    "tip" : "Radnik",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e5c2bb298fd53b98839073"),
+    "ime" : "Katarina",
+    "prezime" : "Bakic",
+    "kor_ime" : "katarinab",
+    "lozinka" : "123Katarina*",
+    "email" : "kaca@gmail.com",
+    "grad" : "Nica",
+    "drzava" : "Francuska",
+    "slika" : "genericka.jpg",
+    "tip" : "Registrovani",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e5c44b298fd53b98839074"),
+    "ime" : "Zoran",
+    "prezime" : "Bakic",
+    "kor_ime" : "zoranb",
+    "lozinka" : "123Zoran*",
+    "email" : "zoran@gmail.com",
+    "grad" : "Zlatibor",
+    "drzava" : "Srbija",
+    "slika" : "genericka.jpg",
+    "tip" : "Registrovani",
+    "__v" : 0
+}
