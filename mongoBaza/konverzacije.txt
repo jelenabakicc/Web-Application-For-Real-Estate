@@ -1,0 +1,199 @@
+{
+    "_id" : ObjectId("60ef1518af70c90d10afe301"),
+    "poruke" : [ 
+        {
+            "idKonverzacije" : 1,
+            "posiljalac" : "biljanab",
+            "primalac" : "jelenab",
+            "datumSlanja" : "2021-07-14T16:47:20.369Z",
+            "text" : "Zdravo, zanima me da li je apartman pet friendly?",
+            "procitana" : true
+        }
+    ],
+    "idKonverzacije" : 1,
+    "idNekretnine" : 8,
+    "tip" : "Stan",
+    "naslov" : "Perla",
+    "nudi" : "biljanab",
+    "vlasnik" : "jelenab",
+    "poslednjaDatum" : ISODate("2021-07-14T16:47:20.369Z"),
+    "poslednjaProcitana" : true,
+    "imaPonudu" : true,
+    "arhivirana" : false,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60ef17706d0f152940362b0e"),
+    "poruke" : [ 
+        {
+            "idKonverzacije" : 2,
+            "posiljalac" : "jelenab",
+            "primalac" : "Agencija",
+            "datumSlanja" : "2021-07-14T17:23:47.772Z",
+            "text" : "heloo",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 2,
+            "posiljalac" : "jelenab",
+            "primalac" : "Agencija",
+            "datumSlanja" : "2021-07-14T23:51:19.692Z",
+            "text" : "caoos, da li ste primili moju poruku?",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 2,
+            "posiljalac" : "jelenab",
+            "primalac" : "Agencija",
+            "datumSlanja" : "2021-07-15T00:01:47.131Z",
+            "text" : "Cujemo li se",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 2,
+            "posiljalac" : "jelenab",
+            "agencijaPosiljalac" : null,
+            "primalac" : "Agencija",
+            "datumSlanja" : "2021-07-15T08:26:02.971Z",
+            "text" : "Zdravo, da li postoji ogucnost doplate za bebisiterku?",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 2,
+            "posiljalac" : "Agencija",
+            "agencijaPosiljalac" : "emaj",
+            "primalac" : "jelenab",
+            "datumSlanja" : "2021-07-15T08:26:43.479Z",
+            "text" : "Postovana, postoji mogucnost doplate. Potrebno je da se javite 2 dana pre dolaska.",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 2,
+            "posiljalac" : "jelenab",
+            "agencijaPosiljalac" : null,
+            "primalac" : "Agencija",
+            "datumSlanja" : "2021-07-15T08:29:53.382Z",
+            "text" : "Znaci, samo da pozovem telefonom?",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 2,
+            "posiljalac" : "Agencija",
+            "agencijaPosiljalac" : "minaj",
+            "primalac" : "jelenab",
+            "datumSlanja" : "2021-07-15T08:32:04.370Z",
+            "text" : "Da.",
+            "procitana" : true
+        }
+    ],
+    "idKonverzacije" : 2,
+    "idNekretnine" : 7,
+    "tip" : "Stan",
+    "naslov" : "Hill Style",
+    "nudi" : "jelenab",
+    "vlasnik" : "Agencija",
+    "poslednjaDatum" : "2021-07-15T08:32:04.370Z",
+    "poslednjaProcitana" : false,
+    "imaPonudu" : false,
+    "arhivirana" : false,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60effef1113140469c1ad4ae"),
+    "poruke" : [ 
+        {
+            "idKonverzacije" : 3,
+            "posiljalac" : "jelenab",
+            "agencijaPosiljalac" : null,
+            "primalac" : "biljanab",
+            "datumSlanja" : "2021-07-15T09:25:05.040Z",
+            "text" : "Da li je stan odmah useljiv?",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 3,
+            "posiljalac" : "biljanab",
+            "agencijaPosiljalac" : null,
+            "primalac" : "jelenab",
+            "datumSlanja" : "2021-07-15T14:51:36.841Z",
+            "text" : "Jeste",
+            "procitana" : true
+        }, 
+        {
+            "idKonverzacije" : 3,
+            "posiljalac" : "jelenab",
+            "agencijaPosiljalac" : null,
+            "datumSlanja" : "2021-07-15T15:53:11.769Z",
+            "text" : "Kada mogu doci da ga pogledam?",
+            "procitana" : true
+        }
+    ],
+    "idKonverzacije" : 3,
+    "idNekretnine" : 10,
+    "tip" : "Stan",
+    "naslov" : "Beograd na vodi - dvosoban stan",
+    "nudi" : "jelenab",
+    "vlasnik" : "biljanab",
+    "poslednjaDatum" : "2021-07-15T15:53:11.769Z",
+    "poslednjaProcitana" : true,
+    "imaPonudu" : false,
+    "arhivirana" : false,
+    "__v" : 0
+}
+
+
+
+{
+    "_id" : ObjectId("60efff18113140469c1ad4af"),
+    "poruke" : [ 
+        {
+            "idKonverzacije" : 4,
+            "posiljalac" : "jelenab",
+            "agencijaPosiljalac" : null,
+            "primalac" : "biljanab",
+            "datumSlanja" : "2021-07-15T09:25:44.763Z",
+            "text" : "Zdravo, kada bih mogla da dodjem da pogledam kucu?",
+            "procitana" : true
+        }
+    ],
+    "idKonverzacije" : 4,
+    "idNekretnine" : 9,
+    "tip" : "Kuca",
+    "naslov" : "Kuca i plac u srcu Vracara",
+    "nudi" : "jelenab",
+    "vlasnik" : "biljanab",
+    "poslednjaDatum" : "2021-07-15T09:25:44.763Z",
+    "poslednjaProcitana" : true,
+    "imaPonudu" : false,
+    "arhivirana" : false,
+    "__v" : 0
+}
+
+
+{
+    "_id" : ObjectId("60f049fba3f15f0c9043ebd9"),
+    "poruke" : [ 
+        {
+            "idKonverzacije" : 5,
+            "posiljalac" : "biljanab",
+            "agencijaPosiljalac" : null,
+            "primalac" : "katarinab",
+            "datumSlanja" : "2021-07-15T14:45:15.169Z",
+            "text" : "Zdravo, mogu li da pogledam apartman uzivo?",
+            "procitana" : true
+        }
+    ],
+    "idKonverzacije" : 5,
+    "idNekretnine" : 12,
+    "tip" : "Stan",
+    "naslov" : "LUX apartmani kod hotela Mona",
+    "nudi" : "biljanab",
+    "vlasnik" : "katarinab",
+    "poslednjaDatum" : "2021-07-15T14:45:15.169Z",
+    "poslednjaProcitana" : true,
+    "imaPonudu" : true,
+    "arhivirana" : false,
+    "__v" : 0
+}
