@@ -1,0 +1,278 @@
+{
+    "_id" : ObjectId("60de088013b9c23ed221ddb2"),
+    "id" : 1,
+    "naziv" : "Luksuzan stan na Vracaru",
+    "grad" : "Beograd",
+    "opstina" : "Vracar",
+    "ulica" : "Sazonova",
+    "broj" : 55,
+    "tip" : "Stan",
+    "sprat" : 3,
+    "zgrada" : 6,
+    "kvadratura" : 105,
+    "br_soba" : "Trosoban",
+    "namestena" : 1,
+    "galerija" : [ 
+        "slika1.jpg", 
+        "slika2.jpg", 
+        "video1.mkv"
+    ],
+    "namena" : "Prodaja",
+    "cena" : 294000,
+    "vlasnik" : "Agencija",
+    "odobrena" : 1,
+    "promovisana" : 0
+}
+
+{
+    "_id" : ObjectId("60e418bd13b9c23ed2221ab7"),
+    "id" : 2,
+    "naziv" : "Lux kuca na Dedinju",
+    "grad" : "Beograd",
+    "opstina" : "Savski Venac",
+    "ulica" : "Slavka Curuvije",
+    "broj" : 5,
+    "tip" : "Kuca",
+    "sprat" : 3,
+    "kvadratura" : 370,
+    "br_soba" : "5+",
+    "namestena" : 1,
+    "galerija" : [ 
+        "slika1.jpg", 
+        "slika2.jpg", 
+        "slika3.jpg"
+    ],
+    "namena" : "Prodaja",
+    "cena" : 1250000,
+    "vlasnik" : "Agencija",
+    "odobrena" : 1,
+    "promovisana" : 1
+}
+
+{
+    "_id" : ObjectId("60e4a0884e06a72f3861622f"),
+    "galerija" : [ 
+        "novi-beograd---blok-30-trosoban-garaza-uknjiz-5425636681746-71795943125.jpg", 
+        "novi-beograd---blok-30-trosoban-garaza-uknjiz-5425636681746-71795943128.jpg", 
+        "novi-beograd---blok-30-trosoban-garaza-uknjiz-5425636681746-71795943129.jpg", 
+        "novi-beograd---blok-30-trosoban-garaza-uknjiz-5425636681746-71795943131.jpg", 
+        "novi-beograd---blok-30-trosoban-garaza-uknjiz-5425636681746-71795943133.jpg"
+    ],
+    "id" : 3,
+    "naziv" : "BW lux stan ",
+    "grad" : "Beograd",
+    "opstina" : "Novi Beograd",
+    "ulica" : "Spanskih boraca",
+    "broj" : 76,
+    "tip" : "Stan",
+    "sprat" : 4,
+    "zgrada" : null,
+    "kvadratura" : "74",
+    "br_soba" : "Dvosoban",
+    "namestena" : 0,
+    "namena" : "Prodaja",
+    "cena" : "170000",
+    "vlasnik" : "jelenab",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e4a5804e06a72f38616230"),
+    "galerija" : [ 
+        "mirijevo-360m2-pri-eg-8ari-id74672-5425636762441-71796282507.jpg", 
+        "mirijevo-360m2-pri-eg-8ari-id74672-5425636762441-71796282508.jpg", 
+        "mirijevo-360m2-pri-eg-8ari-id74672-5425636762441-71796282510.jpg", 
+        "mirijevo-360m2-pri-eg-8ari-id74672-5425636762441-71796282514.jpg", 
+        "mirijevo-360m2-pri-eg-8ari-id74672-5425636762441-71796282501.jpg"
+    ],
+    "id" : 4,
+    "naziv" : "Kuca sa bazenom u Mirijevu",
+    "grad" : "Beograd",
+    "opstina" : "Mirijevo",
+    "ulica" : "Dragoslava Djordjevica Gose",
+    "broj" : 25,
+    "tip" : "Kuca",
+    "sprat" : 3,
+    "zgrada" : null,
+    "kvadratura" : "360",
+    "br_soba" : "5+",
+    "namestena" : 1,
+    "namena" : "Prodaja",
+    "cena" : "250000",
+    "vlasnik" : "jelenab",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e4e7858b44793b247a9cbf"),
+    "galerija" : [ 
+        "232303023.jpg", 
+        "232303794.jpg", 
+        "232302638.jpg", 
+        "232538378.jpg", 
+        "232302546.jpg"
+    ],
+    "id" : 7,
+    "naziv" : "Hill Style",
+    "grad" : "Zlatibor",
+    "opstina" : "Cajetina",
+    "ulica" : "Miladina Pecinara",
+    "broj" : 10,
+    "tip" : "Stan",
+    "sprat" : 2,
+    "zgrada" : 4,
+    "kvadratura" : 40,
+    "br_soba" : "Jednoiposoban",
+    "namestena" : 1,
+    "namena" : "Izdavanje",
+    "cena" : 800,
+    "vlasnik" : "Agencija",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e4f6996374bd47d89750b9"),
+    "galerija" : [ 
+        "189459283.jpg", 
+        "275462477.jpg", 
+        "189137691.jpg", 
+        "189138384.jpg"
+    ],
+    "id" : 8,
+    "naziv" : "Perla",
+    "grad" : "Zlatibor",
+    "opstina" : "Cajetina",
+    "ulica" : "Trzni centar",
+    "broj" : 4,
+    "tip" : "Stan",
+    "sprat" : 2,
+    "zgrada" : null,
+    "kvadratura" : 57,
+    "br_soba" : "Jednoiposoban",
+    "namestena" : 1,
+    "namena" : "Izdavanje",
+    "cena" : "130000",
+    "vlasnik" : "jelenab",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60e5bfa1b1f60e4768b7a35e"),
+    "galerija" : [ 
+        "kuca---vracar-id1130-5425635454079-71790737950.jpg", 
+        "kuca---vracar-id1130-5425635454079-71790737951.jpg", 
+        "kuca---vracar-id1130-5425635454079-71790737952.jpg", 
+        "kuca---vracar-id1130-5425635454079-71790737953.jpg"
+    ],
+    "id" : 9,
+    "naziv" : "Kuca i plac u srcu Vracara",
+    "grad" : "Beograd",
+    "opstina" : "Vracar",
+    "ulica" : "Grocanska",
+    "broj" : 16,
+    "tip" : "Kuca",
+    "sprat" : 2,
+    "zgrada" : null,
+    "kvadratura" : 320,
+    "br_soba" : "5+",
+    "namestena" : 1,
+    "namena" : "Prodaja",
+    "cena" : 450000,
+    "vlasnik" : "biljanab",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60eea877cdc57f31cca51015"),
+    "galerija" : [ 
+        "beograd-na-vodi-vista-dvosoban-garazno-mesto-5425636828022-71796494607.jpg", 
+        "beograd-na-vodi-vista-dvosoban-garazno-mesto-5425636828022-71796494611.jpg", 
+        "beograd-na-vodi-vista-dvosoban-garazno-mesto-5425636828022-71796494604.jpg", 
+        "beograd-na-vodi-vista-dvosoban-garazno-mesto-5425636828022-71796494606.jpg"
+    ],
+    "id" : 10,
+    "naziv" : "Beograd na vodi - dvosoban stan",
+    "grad" : "Beograd",
+    "opstina" : "Savski venac",
+    "ulica" : "Hercegovacka",
+    "broj" : 19,
+    "tip" : "Stan",
+    "sprat" : 1,
+    "zgrada" : 23,
+    "kvadratura" : 57,
+    "br_soba" : "Dvosoban",
+    "namestena" : 0,
+    "namena" : "Prodaja",
+    "cena" : 165000,
+    "vlasnik" : "biljanab",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60eea999cdc57f31cca51016"),
+    "galerija" : [ 
+        "vozdove-kapije-lux-novogradnja-garaza-id-1652-5425636827564-71796493981.jpg", 
+        "vozdove-kapije-lux-novogradnja-garaza-id-1652-5425636827564-71796493978.jpg", 
+        "vozdove-kapije-lux-novogradnja-garaza-id-1652-5425636827564-71796493983.jpg", 
+        "vozdove-kapije-lux-novogradnja-garaza-id-1652-5425636827564-71796493985.jpg", 
+        "vozdove-kapije-lux-novogradnja-garaza-id-1652-5425636827564-71796493990.jpg"
+    ],
+    "id" : 11,
+    "naziv" : "Vozdove kapije, novogradnja",
+    "grad" : "Beograd",
+    "opstina" : "Vozdovac",
+    "ulica" : "Generala Rasica",
+    "broj" : 20,
+    "tip" : "Stan",
+    "sprat" : 4,
+    "zgrada" : 6,
+    "kvadratura" : 47,
+    "br_soba" : "Dvosoban",
+    "namestena" : 1,
+    "namena" : "Izdavanje",
+    "cena" : 500,
+    "vlasnik" : "biljanab",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60eeab37cdc57f31cca51017"),
+    "galerija" : [ 
+        "lux-apartmani-centar-50m-od-hotela-mona-5425636321146-71794496184.jpg", 
+        "lux-apartmani-kod-hotela-mona-spa-recepcija-5425636321146-71795610267.jpg", 
+        "lux-apartmani-kod-hotela-mona-spa-recepcija-5425636321146-71795610264.jpg", 
+        "lux-apartmani-centar-50m-od-hotela-mona-5425636321146-71794496180.jpg"
+    ],
+    "id" : 12,
+    "naziv" : "LUX apartmani kod hotela Mona",
+    "grad" : "Zlatibor",
+    "opstina" : "Cajetina",
+    "ulica" : "Centar",
+    "broj" : 2,
+    "tip" : "Stan",
+    "sprat" : 3,
+    "zgrada" : 5,
+    "kvadratura" : 36,
+    "br_soba" : "Dvosoban",
+    "namestena" : 0,
+    "namena" : "Prodaja",
+    "cena" : 61164,
+    "vlasnik" : "katarinab",
+    "odobrena" : 1,
+    "promovisana" : 1,
+    "__v" : 0
+}
