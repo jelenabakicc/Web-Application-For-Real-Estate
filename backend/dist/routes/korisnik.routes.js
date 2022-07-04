@@ -1,0 +1,32 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const korisnik_controller_1 = require("../controllers/korisnik.controller");
+const korisnikRouter = express_1.default.Router();
+korisnikRouter.route('/dohvSveKorisnike').get((req, res) => new korisnik_controller_1.KorisnikController().dohvSveKorisnike(req, res));
+korisnikRouter.route('/dohvRegistrovane').get((req, res) => new korisnik_controller_1.KorisnikController().dohvRegistrovane(req, res));
+korisnikRouter.route('/dohvAgente').get((req, res) => new korisnik_controller_1.KorisnikController().dohvAgente(req, res));
+korisnikRouter.route('/prijava').post((req, res) => new korisnik_controller_1.KorisnikController().prijava(req, res));
+korisnikRouter.route('/registracija').post((req, res) => new korisnik_controller_1.KorisnikController().registracija(req, res));
+korisnikRouter.route('/dohvKorisnika').post((req, res) => new korisnik_controller_1.KorisnikController().dohvKorisnika(req, res));
+korisnikRouter.route('/dohvAdmina').get((req, res) => new korisnik_controller_1.KorisnikController().dohvAdmina(req, res));
+korisnikRouter.route('/novaLozinka').post((req, res) => new korisnik_controller_1.KorisnikController().novaLozinka(req, res));
+korisnikRouter.route('/proveriMail').post((req, res) => new korisnik_controller_1.KorisnikController().proveriMail(req, res));
+korisnikRouter.route('/azurirajIme').post((req, res) => new korisnik_controller_1.KorisnikController().azurirajIme(req, res));
+korisnikRouter.route('/azurirajPrezime').post((req, res) => new korisnik_controller_1.KorisnikController().azurirajPrezime(req, res));
+korisnikRouter.route('/azurirajKorIme').post((req, res) => new korisnik_controller_1.KorisnikController().azurirajKorIme(req, res));
+korisnikRouter.route('/azurirajMail').post((req, res) => new korisnik_controller_1.KorisnikController().azurirajMail(req, res));
+korisnikRouter.route('/azurirajGrad').post((req, res) => new korisnik_controller_1.KorisnikController().azurirajGrad(req, res));
+korisnikRouter.route('/azurirajDrzavu').post((req, res) => new korisnik_controller_1.KorisnikController().azurirajDrzavu(req, res));
+korisnikRouter.route('/azurirajSliku').post((req, res) => new korisnik_controller_1.KorisnikController().azurirajSliku(req, res));
+korisnikRouter.route('/obrisiKorisnika').post((req, res) => new korisnik_controller_1.KorisnikController().obrisiKorisnika(req, res));
+korisnikRouter.route('/blokiraj').post((req, res) => new korisnik_controller_1.KorisnikController().blokiraj(req, res));
+korisnikRouter.route('/odblokiraj').post((req, res) => new korisnik_controller_1.KorisnikController().odblokiraj(req, res));
+korisnikRouter.route('/dohvMojeBlokirane').post((req, res) => new korisnik_controller_1.KorisnikController().dohvMojeBlokirane(req, res));
+korisnikRouter.route('/dohvMojeZabranjene').post((req, res) => new korisnik_controller_1.KorisnikController().dohvMojeZabranjene(req, res));
+korisnikRouter.route('/daLiSuBlokirani').post((req, res) => new korisnik_controller_1.KorisnikController().daLiSuBlokirani(req, res));
+exports.default = korisnikRouter;
+//# sourceMappingURL=korisnik.routes.js.map
