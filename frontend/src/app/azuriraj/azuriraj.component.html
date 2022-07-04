@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<h2 class="text-center">Azurirajte podatke</h2>
+
+<form class="text-center">
+    <input name = "ime" class = "form" placeholder ="Azuriraj ime: " [(ngModel)] = "ime">
+    <br>
+    <input name="prezime" class = "form" placeholder="Azuriraj prezime: " [(ngModel)]= "prezime">
+    <br>
+    <!-- <input name ="kor_ime" class="form" placeholder="Azuriraj korisničko ime:" [(ngModel)] = "kor_ime">
+    <br> -->
+    <input name="email" class="form" placeholder="Azuriraj e-mail adresu" [(ngModel)]="email">
+    <br>
+    <input name="grad" class="form" placeholder="Azuriraj grad: " [(ngModel)]="grad">
+    <br>
+    <input name="drzava" class="form" placeholder="Azuriraj drzavu: " [(ngModel)]="drzava">
+    <br>
+    Azuriraj profilnu sliku: <input type="file"  (change)="onFileSelect($event)" name="file">
+    <br>
+    <br>
+    <br>
+    <button class="btn btn-secondary mt-3" (click)="azuriraj()">Azuriraj podatke</button>
+</form>
+
+<app-footer></app-footer>

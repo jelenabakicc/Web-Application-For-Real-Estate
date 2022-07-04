@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<h3 class="text-center">Promena lozinke</h3>
+<form class="text-center">     
+        
+        <input type="password" class="form" placeholder="Stara lozinka" name="stara" [(ngModel)]='staraLozinka'>
+        <br>
+        <input type="password" class="form" placeholder="Nova lozinka" [(ngModel)]='novaLozinka1'
+               pattern="^(?=\D*\d)(?=[^a-z]*[a-z])(?=.*[$@$!%*?&])(?=[^A-Z]*[A-Z]).{8,30}$" name="lozinka" #nova="ngModel">
+        <br>
+        <input type="password" class="form" placeholder="Ponovite novu lozinku" name = "ponovljena" [(ngModel)]='novaLozinka2'>
+        <br>
+        <br>
+        <button class="btn btn-secondary mt-3" (click)= 'nova.errors? null: promeniLozinku()'>Potvrdi</button>
+        <br>
+        <br>
+        <span class="greska" *ngIf='nova.errors?.pattern'>Lozinka mora imati najmanje 8, a najvise 24 karaktera. 
+            <br>
+            Mora imati barem jedno veliko i jedno malo slovo, barem jednu cifru i jedan specijalan karakter.
+        </span>
+
+</form>
+
+
+<app-footer></app-footer>
+
+

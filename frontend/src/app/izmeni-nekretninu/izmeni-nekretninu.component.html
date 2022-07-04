@@ -1,0 +1,66 @@
+<div id="page-container">
+    <app-header></app-header>
+
+    <form class="text-center">
+        <br>
+        <h3>Izmeni nekretninu: </h3>
+        <input name = "naziv" class = "form" placeholder ="Naziv: " [(ngModel)] = "naziv">
+        <br>
+        <input name="grad" class = "form" placeholder="Grad: " [(ngModel)]= "grad">
+        <br>
+        <input name ="opstina" class="form" placeholder="Opstina:" [(ngModel)] = "opstina">
+        <br>
+        <input name= "ulica" class="form" placeholder="Ulica: " [(ngModel)]="ulica">
+        <br>
+        <input name= "broj" class="form" placeholder="Broj " [(ngModel)]="broj">
+        <br> 
+        <select name="tip" class="form select" [(ngModel)]="tip">
+            <option value='' disabled selected hiden class="select-placeholder">Tip </option>
+            <option>Stan</option>
+            <option>Kuca</option>
+        </select>
+        <br>
+        <input name="sprat" class="form" placeholder="Sprat: " [(ngModel)]="sprat">
+        <br>
+        <input *ngIf = "tip=='Stan'" name="zgrada" class="form" placeholder="Spratnost zgrade: " [(ngModel)]="zgrada">
+        <br>
+        <input name="kvadratura" class="form" placeholder="Kvadratura: " [(ngModel)]="kvadratura">
+        <br>
+        <select name="br_soba" class="form select" [(ngModel)]="br_soba">
+            <option value='' disabled selected hidden class="select-placeholder">Broj soba </option>
+            <option>Garsonjera</option>
+            <option>Jednosoban</option>
+            <option>Jednoiposoban</option>
+            <option>Dvosoban</option>
+            <option>Trosoban</option>
+            <option>Cetvorosoban</option>
+            <option>5+</option>
+        </select>
+        <br>
+        <select name="namestena" class="form select" [(ngModel)]="namestena">
+            <option value='' disabled selected hidden class="select-placeholder">Da li je namestena?</option>
+            <option value=1>Da</option>
+            <option value=0>Ne</option>
+        </select>
+        <br>
+        Galerija slika i video zapisa: 
+        <input type="file" name="files" multiple (change)="selectMultipleImage($event)">
+        <br>
+        <select name="namena" class="form select" [(ngModel)]="namena">
+            <option value='' disabled selected hidden class="select-placeholder">Namena:</option>
+            <option>Prodaja</option>
+            <option>Izdavanje</option>
+        </select>
+        <br>
+        <input name="cena" class="form" placeholder="Cena: " [(ngModel)]="cena">
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-secondary mt-3" (click)="izmeni()">Potvrdi</button>
+        <br>
+        <br>
+    </form>
+    <br>
+
+    <app-footer></app-footer>
+</div>

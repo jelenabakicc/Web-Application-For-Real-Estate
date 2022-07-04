@@ -1,0 +1,191 @@
+<div id="page-container" >
+
+    <app-header></app-header>
+
+    <div class="container-fluid ">
+
+        <div class="row" style="background-color: antiquewhite;">
+            <br>
+            <h2>Pregled korisnika</h2>
+        </div>
+        <div class='row'>
+            <br>
+            <h3>Registrovani korisnici:</h3>
+        </div>
+        <div class="card-group">
+            <div class="col-2" *ngFor = 'let k of regKorisnici'>
+                <div class="card">
+                    <img class="card-img-top" src="../../assets/{{k.slika}}" alt="Card image">
+                    <div class="card-body">
+                            <h4 class="cardtitle">{{k.ime}} {{k.prezime}}</h4>
+                            <p class="cardtext">{{k.email}} | {{k.grad}} | {{k.drzava}}</p>
+                            <a href="/azuriraj" (click)='azurirajKorisnika(k)' class="btnbtn-primary">Azuriraj podatke</a> | 
+                            <a href="/admin" (click)='obrisiKorisnika(k)' class="btnbtn-primary">Obrisi korisnika</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <br>
+            <h3>Radnici:</h3>
+        </div>
+        <div class="card-group">
+            <div class="col-2" *ngFor = 'let k of agenti'>
+                <div class="card">
+                    <img class="card-img-top" src="../../assets/{{k.slika}}" alt="Card image">
+                    <div class="card-body">
+                            <h4 class="cardtitle">{{k.ime}} {{k.prezime}}</h4>
+                            <p class="cardtext">{{k.email}} | {{k.grad}} | {{k.drzava}}</p>
+                            <a href="/azuriraj" (click)='azurirajKorisnika(k)' class="btnbtn-primary">Azuriraj podatke</a> | 
+                            <a href="/admin" (click)='obrisiKorisnika(k)' class="btnbtn-primary">Obrisi radnika</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <div class='row'>
+            <br>
+            <h3>Zahtevi za registraciju:</h3>
+        </div>
+        <div class="card-group">
+            <div class="col-2" *ngFor = 'let z of zahteviReg'>
+                <div class="card">
+                    <img class="card-img-top" src="../../assets/{{z.slika}}" alt="Card image">
+                    <div class="card-body">
+                            <h4 class="cardtitle">{{z.ime}} {{z.prezime}}</h4>
+                            <p class="cardtext">{{z.email}} | {{z.grad}} | {{z.drzava}} | {{z.tip}}</p>
+                            <a href="/admin" (click)="prihvatiZahtev(z)" class="btnbtn-primary">Prihvati</a> | 
+                            <a href="/admin" (click)="odbijZahtev(z)" class="btnbtn-primary">Odbij</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <div class="row" style="background-color: antiquewhite;">
+            <br>
+            <h2>Pregled nekretnina</h2>
+        </div>
+        <div class='row'>
+            <br>
+            <h3>Neodobrene nekretnine:</h3>          
+        </div>
+        <div class="card-group">
+            <div class="col-3" *ngFor = 'let n of neodNekretnine'>
+                <div class="card">
+                    <img class="card-img-top" src="../../assets/{{n.galerija[1]}}" alt="Card image">
+                    <div class="card-body">
+                            <h4 class="cardtitle">{{n.naziv}}</h4>
+                            <p class="cardtext">{{n.opstina}} | {{n.grad}} | {{n.cena}}€ 
+                                | {{n.tip}} | {{n.kvadratura}}m2 | {{n.namena}}</p>
+                            <a href="/admin" (click)="odobriNekretninu(n)" class="btnbtn-primary">Odobri</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+       
+    
+
+        <div class="row" style="background-color: antiquewhite;">
+            <h2>Graficki prikaz nekretnina: </h2>
+        </div>
+        <br>
+        <div class="row" style="margin-left: 40%; margin-right: 40%;">
+            <p>Broj nekretnina prema nameni:</p>
+        </div>
+            <div class="graf" style="display: block">
+                <canvas baseChart
+                    [datasets]="barChartData1"
+                    [labels]="barChartLabels1"
+                    [options]="barChartOptions1"
+                    [legend]="barChartLegend1"
+                    [chartType]="barChartType1">
+                </canvas>
+            </div>
+
+
+            <br>
+            <div class="row" style="margin-left: 40%; margin-right: 40%;">
+                <p>Broj nekretnina po gradovima:</p>
+            </div>
+            <div class="graf" style="display: block">
+                <canvas baseChart
+                    [datasets]="barChartData2"
+                    [labels]="barChartLabels2"
+                    [options]="barChartOptions2"
+                    [legend]="barChartLegend2"
+                    [chartType]="barChartType2">
+                </canvas>
+            </div>
+
+    <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+
+            <br>
+            <div class="row" style="margin-left: 40%; margin-right: 40%;">
+                <p>Cenovni rang:</p>
+            </div>
+            <div class="graf" style="display: block">
+                <canvas baseChart
+                    [datasets]="barChartData3"
+                    [labels]="barChartLabels3"
+                    [options]="barChartOptions3"
+                    [legend]="barChartLegend3"
+                    [chartType]="barChartType3">
+                </canvas>
+            </div>
+
+            <br>
+
+            <div class="row" style="background-color: antiquewhite;">
+                <h2>Definisi procenat za posredovanje nekretnina: </h2>
+            </div>
+            <div class="row">
+                    
+                <input type="text" placeholder="Procenat " [(ngModel)]="procenat" style="width:22%">
+                <button class="btn btn-primary mt-2" (click)='definisiProcenat()'>Potvrdi</button>
+
+            </div>
+
+            <div class="row" style="background-color: antiquewhite;">
+                <h2>Prihod: {{prihod}}</h2>
+            </div>
+
+            <div class='row' style="background-color: antiquewhite;">
+                <br>            
+                <h3>Ugovorene prodaje:</h3>
+            </div>
+            <div class="card-group">
+                <div class="col-2" *ngFor = 'let n of prodaje'>
+                    <div class="card">
+                        <div class="card-body">
+                                <h4 class="cardtitle">{{n.idPonude}} {{n.nazivNekretnine}}</h4>
+                                <p class="cardtext"> Nudi: {{n.nudi}}  Vlasnik: {{n.vlasnik}}  Tip: {{n.tip}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+</div>
+
+<!-- ne radi klasican footer jer je velika stranica !!!!! -->
+
+<footer  id="footer" style=" background-color: black; color: white; width: 100%;">               
+    <div>
+        <div class="container ">
+            <div class="row" style="margin: 0; padding: 0;">
+                <div class="col-lg-12 " style="margin: 0; padding: 0;">
+                    <div class="copyright d-flex p-4 justify-content-center  align-items-center" style="margin: 0; padding: 0;"  >
+                        
+                            &copy; Copyright 2021, Jelena Bakić
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</footer>

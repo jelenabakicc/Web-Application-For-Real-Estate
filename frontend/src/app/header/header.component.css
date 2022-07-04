@@ -1,0 +1,37 @@
+.meni{
+    background-color: rgb(241, 97, 97);
+    text-align: center;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color:white;
+}
+
+a:hover {
+    color:  rgb(240, 208, 198);
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item.active {
+	background-color: rgb(240, 208, 198);
+}
+
+.dropdown-item:hover{
+    color: black;
+    background-color: rgb(240, 208, 198);
+}
+
+
+
+

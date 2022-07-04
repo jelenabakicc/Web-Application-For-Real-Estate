@@ -1,0 +1,46 @@
+<app-header></app-header>
+
+<form class="text-center">
+    <input name = "ime" class = "form" placeholder ="Ime: " [(ngModel)] = "ime">
+    <br>
+    <input name="prezime" class = "form" placeholder="Prezime: " [(ngModel)]= "prezime">
+    <br>
+    <input name ="kor_ime" class="form" placeholder="Korisničko ime:" [(ngModel)] = "kor_ime">
+    <br>
+    <input type="password" name= "lozinka" class="form" placeholder="Lozinka: " [(ngModel)]="lozinka"
+        pattern="^(?=\D*\d)(?=[^a-z]*[a-z])(?=.*[$@$!%*?&])(?=[^A-Z]*[A-Z]).{8,24}$" name="nova" #nova="ngModel">
+    <br>
+    <input type="password" name= "lozinka2" class="form" placeholder="Ponovo unesite lozinku: " [(ngModel)]="lozinka2">
+    <br> 
+    <input name="email" class="form" placeholder="E-mail adresa" [(ngModel)]="email">
+    <br>
+    <input name="grad" class="form" placeholder="Grad: " [(ngModel)]="grad">
+    <br>
+    <input name="drzava" class="form" placeholder="Drzava: " [(ngModel)]="drzava">
+    <br>
+    <select name="tip" class="form select" [(ngModel)]="tip">
+        <option value='' disabled selected hidden class="select-placeholder">Tip </option>
+        <option>Admin</option>
+        <option value="Registrovani">Korisnik</option>
+        <option>Radnik</option>
+    </select>
+    <br>
+    <br>
+    <input type="file"  (change)="onFileSelect($event)" name="file">
+    <br>
+    <br>
+    <br>
+    <button class="btn btn-secondary mt-3" (click)="nova.errors? null : registracija()">Registracija</button>
+    <br>
+    <br>
+
+    <span class="greska" *ngIf='nova.errors?.pattern'>Lozinka mora imati najmanje 8, a najvise 24 karaktera.
+        Mora imati barem jedno veliko i jedno malo slovo, barem jednu cifru i jedan specijalan karakter.
+    </span>
+</form>
+<br>
+
+
+<br>
+
+<app-footer></app-footer>

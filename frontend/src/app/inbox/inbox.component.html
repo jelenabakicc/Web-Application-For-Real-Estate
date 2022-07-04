@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12" style="text-align: center; font-weight: bold; font-size: 30px;">
+            Inbox 
+        </div>
+    </div>
+    <br>
+    <div class="card-group">
+        <div class="col-12" *ngFor = 'let n of mojeKonverzacije'>
+            <div class="card">
+                <div class="card-header">
+                    <h4 style="color: brown; font-weight: bold;">{{n.naslov}}</h4> 
+                    
+                  </div>
+                <div class="card-body" style="text-align: right;">
+                    <button class="btn btn-primary" style="background-color: white; color: brown; " (click)="arhiviraj(n)">
+                        Arhiviraj konverzaciju
+                    </button>
+                    <button class="btn btn-primary" style="background-color: white; color: brown; " (click)="otvori(n)">
+                        Otvori konverzaciju
+                    </button>                        
+                    
+                    {{n.datum}} | {{n.vreme}}
+                        
+                </div>
+                <div class="card-footer" style="text-align: right; background-color:rgb(233, 159, 129);" 
+                *ngIf = 'n.poslednjaProcitana == false' > Neprocitana</div>
+                <div class="card-footer" style="text-align: right; background-color:aquamarine;" 
+                *ngIf = 'n.poslednjaProcitana == true' > Procitana</div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+</div>
+
+<footer  id="footer" style=" background-color: black; color: white; width: 100%;">               
+    <div>
+        <div class="container ">
+            <div class="row" style="margin: 0; padding: 0;">
+                <div class="col-lg-12 " style="margin: 0; padding: 0;">
+                    <div class="copyright d-flex p-4 justify-content-center  align-items-center" style="margin: 0; padding: 0;"  >
+                        
+                            &copy; Copyright 2021, Jelena Bakić
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</footer>

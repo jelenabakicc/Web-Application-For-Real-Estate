@@ -1,0 +1,17 @@
+.btn-primary{
+    background-color: black;
+    border-color: white;
+}
+  
+.card{
+    width: 180px;
+}
+
+.card-img-top{
+    height: 150px;
+}
+
+/* .btn{
+    background-color: antiquewhite
+    
+} */

@@ -1,0 +1,107 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="card-group" style="background-color: antiquewhite;">
+        <div class="col-12" *ngFor = 'let n of poruke'>
+            <div class="card" [class.desno] = 'n.posiljalac == ulogovani' [class.desno1] = ' n.posiljalac == "Agencija"' 
+            [class.levo] = 'n.primalac == ulogovani'>
+                <div class="card-header" [class.desno] = 'n.posiljalac == ulogovani' [class.levo] = 'n.primalac == ulogovani'>
+                    <p *ngIf = 'izabrana.vlasnik == n.primalac' style="color: brown; font-weight: bold;">
+                        {{n.datum}} | {{n.vreme}} | {{n.posiljalac}}
+                    </p> 
+                    <p *ngIf = 'izabrana.vlasnik == n.posiljalac && izabrana.vlasnik =="Agencija" && korisnik.tip == "Registrovani"' 
+                    style="color: brown; font-weight: bold;">
+                        {{n.datum}} | {{n.vreme}} | Vlasnik
+                    </p> 
+                    <p *ngIf = 'izabrana.vlasnik == n.posiljalac && izabrana.vlasnik =="Agencija" && korisnik.tip == "Radnik"'
+                     style="color: brown; font-weight: bold;">
+                        {{n.datum}} | {{n.vreme}} | {{n.agencijaPosiljalac}}
+                    </p> 
+                    
+                  </div>
+                <div class="card-body" [class.desno] = 'n.posiljalac == ulogovani' [class.levo] = 'n.primalac == ulogovani'>
+                                            
+                    
+                    {{n.text}}
+                        
+                </div>
+                <div class="card-footer" style="text-align: right; background-color:rgb(233, 159, 129);" 
+                *ngIf = 'n.procitana == false' ></div>
+                <div class="card-footer" style="text-align: right; background-color:aquamarine;" 
+                *ngIf = 'n.procitana == true' ></div>
+            </div>
+            <br>
+        </div>
+        <div class = "col-12" *ngIf = 'izabrana.imaPonudu == false && korisnik.tip == "Registrovani" && 
+            izabrana.vlasnik != ulogovani'>
+            <div class="card-header" *ngIf = 'izabranaNekretnina.namena == "Izdavanje"'>
+                <input type="text" placeholder="Datum prijave: (u formatu YYYY-MM-DD) " [(ngModel)]="datumOd" style="width:22%">
+                <input type="text" placeholder="Datum odjave: (u formatu YYYY-MM-DD)" [(ngModel)]="datumDo" style="width:22%">
+            </div>
+            <div class="card">
+                <button class="btn btn-primary mt-2" (click)='posaljiPonudu()' >Posalji ponudu</button>
+            </div>
+        </div>
+
+        <div class = "col-6" *ngIf = 'izabrana.imaPonudu == true && korisnik.tip == "Registrovani" && 
+            izabrana.vlasnik == ulogovani && ponuda.status == "N"'>
+            <div class="card">
+                <button class="btn btn-primary mt-2" (click)='prihvatiPonudu()' >Prihvati ponudu</button>
+            </div>
+        </div>
+
+        <div class = "col-6" *ngIf = 'izabrana.imaPonudu == true && korisnik.tip == "Registrovani" && 
+            izabrana.vlasnik == ulogovani && ponuda.status == "N"'>
+            <div class="card">
+                <button class="btn btn-primary mt-2" (click)='odbijPonudu()' >Odbij ponudu</button>
+            </div>
+        </div>
+
+        <div class = "col-6" *ngIf = 'izabrana.imaPonudu == true && korisnik.tip == "Radnik"'>
+            <div class="card">
+                <button class="btn btn-primary mt-2" (click)='prihvatiPonudu()' >Prihvati ponudu</button>
+            </div>
+        </div>
+        <div class = "col-6" *ngIf = 'izabrana.imaPonudu == true && korisnik.tip == "Radnik"'>
+            <div class="card">
+                <button class="btn btn-primary mt-2" (click)='odbijPonudu()' >Odbij ponudu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" *ngIf = "zabrana == false">
+        <div class="col-10">
+            <div class="card ">
+                <div class="card-body">
+                <h5 class="card-title" style="color: brown;">Nova poruka:</h5>
+                <textarea class="form-control" [(ngModel)]="textPoruke" ></textarea>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-2">
+            <div  style="margin-right: 0%; height: 40%; margin-top: 22%; background-color: white;">
+                <button class="btn btn-primary mt-2" (click)='posaljiPoruku()' style="height: 100%;">Posalji poruku</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer  id="footer" style=" background-color: black; color: white; width: 100%;">               
+    <div>
+        <div class="container ">
+            <div class="row" style="margin: 0; padding: 0;">
+                <div class="col-lg-12 " style="margin: 0; padding: 0;">
+                    <div class="copyright d-flex p-4 justify-content-center  align-items-center" style="margin: 0; padding: 0;"  >
+                        
+                            &copy; Copyright 2021, Jelena Bakić
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</footer>

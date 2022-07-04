@@ -1,0 +1,68 @@
+<header>
+    <!-- ovde ce ici promovisane nekretnine -->
+    <nav class="navbar navbar-expand-lg meni">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item justify-content-center" >
+                    <p style="font-weight: bolder; color: antiquewhite; margin-top: 5%;">|&nbsp;NEKRETNINE&nbsp;| </p> 
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li *ngIf="ulogovan=='ne' && (prijava=='da' || registracija=='da')" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="" >Pocetna strana</a>
+                </li>
+                <li *ngIf="prijava=='ne' && ulogovan=='ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/prijava">Prijava</a>
+                </li>
+                <li *ngIf="ulogovan=='ne' && registracija=='ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/registracija">Registracija</a>
+                </li>
+                <li *ngIf="ulogovan=='da' && azuriranje=='ne' && arhiva == 'ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/promeniL">Promeni lozinku</a>
+                </li>
+                <li *ngIf="tip=='Admin' && azuriranje=='ne' && arhiva == 'ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/korisnici">Dodaj novog korisnika</a>
+                </li>
+                <li *ngIf="ulogovan=='da' && azuriranje=='ne' && arhiva == 'ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/nekretnine">Dodaj novu nekretninu</a>
+                </li>
+                <li *ngIf="tip=='Registrovani' && azuriranje=='ne' && arhiva == 'ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/azuriraj">Azuriraj podatke</a>
+                </li>
+
+                <li *ngIf="tip!='Admin' && azuriranje=='ne' && ulogovan=='da' && inbox=='ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/inbox">Inbox</a>
+                </li>
+                <li *ngIf="tip!='Admin' && inbox=='da' && ulogovan=='da' && arhiva == 'ne'" class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="/arhivirane">Arhivirane poruke</a>
+                </li>
+                
+
+
+               
+                <li *ngIf="azuriranje=='da' && konverzacija=='ne'" class="nav-item justify-content-center">
+                    <button class="btn btn-secondary mt-2" (click)='povratak()'>Nazad </button>
+                </li>
+                
+               
+                <button *ngIf="ulogovan=='da'" class="btn btn-secondary mt-2" (click)='odjava()'>Odjavi se </button>
+            </ul> 
+        </div>
+    </nav>
+
+    <!-- <section id="inner-headline">
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col-lg-12">
+                    <h2 class="breadcrumbs">
+                        <a routerLink=""><i class="fa fa-home breadcrumbsItemLink" aria-hidden="true" ></i></a>
+                        
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+</header>
