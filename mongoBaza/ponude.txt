@@ -1,0 +1,28 @@
+{
+    "_id" : ObjectId("60edbde5944ac939200a26c0"),
+    "idPonude" : 2,
+    "idNekretnine" : 7,
+    "tip" : "Izdavanje",
+    "nudi" : "jelenab",
+    "vlasnik" : "Agencija",
+    "status" : "O",
+    "datumOd" : "2021-7-15",
+    "datumDo" : "2021-7-18",
+    "ukupnaCena" : 80,
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("60f04a04a3f15f0c9043ebda"),
+    "idPonude" : 3,
+    "idNekretnine" : 12,
+    "tip" : "Prodaja",
+    "nudi" : "biljanab",
+    "vlasnik" : "katarinab",
+    "status" : "N",
+    "datumOd" : null,
+    "datumDo" : null,
+    "ukupnaCena" : 61164,
+    "datumSlanja" : ISODate("2021-07-15T14:45:24.301Z"),
+    "__v" : 0
+}
