@@ -9,14 +9,14 @@ This project is mandatory project on Internet Applications Programming course.
 
 ## Installation:
 
-1. NODE.JS
+#### 1. NODE.JS 
 - install [node.js](https://nodejs.org/en/) 
-2. FRONTEND
+#### 2. FRONTEND
 - install [Angular](https://angular.io/) 
-3. BACKEND
+#### 3. BACKEND
 - npm install -g typescript
 
-4. DATABASE
+#### 4. DATABASE
 - install [MongoDB](https://www.mongodb.com/docs/)
 - install [MongoDBCompass](https://www.mongodb.com/products/compass)
 - install [Robo3T](https://robomongo.org/)
